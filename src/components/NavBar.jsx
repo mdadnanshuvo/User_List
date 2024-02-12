@@ -15,10 +15,10 @@ function NavBar()
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link" activeClassName="active" exact to="/">Home</NavLink>
+                            <NavLink className="nav-link" activeclassname="active" >Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" activeClassName="active" to="/adduser">Add User</NavLink>
+                            <NavLink className="nav-link" activeclassname="active" to="/adduser">Add User</NavLink>
                         </li>
                     </ul>
                 </div>
