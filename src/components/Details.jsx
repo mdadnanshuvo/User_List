@@ -8,10 +8,6 @@ function Details()
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() =>
-    {
-        fetchUserDetails();
-    }, [id]);
 
     const fetchUserDetails = async () =>
     {
@@ -28,6 +24,12 @@ function Details()
             setLoading(false);
         }
     };
+
+
+    useEffect(() =>
+    {
+        fetchUserDetails();
+    }, [id]);
 
     if (loading)
     {
